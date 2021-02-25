@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="learn javascript by www.liaoxuefeng.com">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/vue.min.js"></script>
+    <script src="/static/js/bootstrap.js"></script>
+</head>
+
+<body>
+    <header class="navbar navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <div class="navbar-brand" style="font-weight: bold">即时聊天室</div>
+            </div>
+            <nav class="collapse navbar-collapse" id="bs-navbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/signout">退出</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="important" style="display: none; color:#cdbfe3; background-color:#6f5499; padding:30px 0; margin:-20px 0 20px 0;">
+        <div class="container">
+            <h1 style="color:#fff; font-size:60px">WebSocket 即时通讯!</h1>
+            <p style="font-size:24px; line-height:48px">基于Node.js实现的即时通讯在线聊天室.</p>
+        </div>
+    </div>
+    {% block main %} {% endblock %}
+    <footer style="background-color:#ddd; padding: 20px 0;">
+        <div class="container">
+            <p>This JavaScript course is created by <a target="_blank">@2021</a>.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
